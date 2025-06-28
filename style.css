@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Login Page Styles */
+#loginPage {
+    text-align: center;
+    margin-top: 100px;
+    background: #1b2845;
+    padding: 30px;
+    width: 320px;
+    margin-inline: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,217,255,0.4);
+}
+
+#loginPage h2 {
+    margin-bottom: 20px;
+}
+
+#loginPage input, #loginPage select {
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+#loginBtn, #googleBtn {
+    padding: 10px 20px;
+    background: #00d9ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#loginBtn:hover, #googleBtn:hover {
+    background: #00aacc;
+}
+
+/* Navbar and Profile */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1b2845;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#profileName {
+    color: #00d9ff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d9ff;
+}
+
+/* Dashboard */
+.dashboard {
+    display: none;
+    background: #22395d;
+    padding: 20px;
+    text-align: center;
+}
+
+#logoutBtn {
+    padding: 10px 15px;
+    background: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background: darkred;
+}
+
+/* Sections Common */
+.hero-section, .courses-section, .detail-section, .quiz-section, .about-section {
+    text-align: center;
+    padding: 100px 20px;
+    display: none;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+
+.sub-heading {
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+#topicInput {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    background: #00d9ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background: #00aacc;
+}
+
+.quiz-link {
+    margin-top: 20px;
+    color: #ddd;
+}
+
+.quiz-link span {
+    color: #00d9ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.course-heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    padding: 15px;
+    width: 180px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,217,255,0.6);
+}
+
+.course img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.course h2 {
+    margin-bottom: 10px;
+    color: #00d9ff;
+    font-size: 18px;
+}
+
+.course p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #00d9ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #00aacc;
+}
+
+.detail-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 20px 0;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.motivate {
+    background: #00d9ff;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: inline-block;
+    animation: pop 0.5s ease;
+}
+
+.about-text {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-inline: auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
